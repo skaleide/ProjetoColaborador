@@ -1,0 +1,12 @@
+<p>colaboradores-form works!</p>
+<!-- src/app/colaboradores-form/colaboradores-form.component.html -->
+<form (ngSubmit)="onSave()">
+    <label for="nome">Nome:</label>
+    <input id="nome" [(ngModel)]="nome" name="nome" required>
+  
+    <label for="cargo">Cargo:</label>
+    <input id="cargo" [(ngModel)]= "cargo" name="cargo" required>
+  
+    <button type="aceitar">Salvar</button>
+  </form>
+  

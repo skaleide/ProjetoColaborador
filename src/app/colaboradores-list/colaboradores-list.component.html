@@ -1,0 +1,10 @@
+<p>colaboradores-list works!</p>
+<!-- src/app/colaboradores-list/colaboradores-list.component.html -->
+<ul>
+    <li *ngFor="let colaborador of colaboradores">
+      {{ colaborador.nome }} - {{ colaborador.cargo }}
+      <button (click)="onEdit(colaborador)">Editar</button>
+      <button (click)="onDelete(colaborador.id)">Excluir</button>
+    </li>
+  </ul>
+  
